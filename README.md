@@ -15,15 +15,17 @@ https://docs.python.org/3/distutils/setupscript.html
 ## Package
 
 ```console
-$ git clone https://github.com/Kyoroid/fizzbuzz
+$ git clone https://github.com/Kyoroid/fizzbuzz.git
 $ cd fizzbuzz
+$ pip install --upgrade setuptools wheel
 $ python setup.py sdist bdist_wheel
 ```
 
 ## Install
 
 ```console
-$ pip install dist/fizzbuzz-0.0.1-py3-none-any.whl
+$ cd ../
+$ pip install fizzbuzz/dist/fizzbuzz-0.0.1-py3-none-any.whl
 ```
 
 ## Execute
